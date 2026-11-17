@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "NITRO_PRESET=vercel AGENT_NATIVE_VERCEL_CRON_SCHEDULE=\"0 9 * * *\" pnpm build && if [ \"$VERCEL_ENV\" = \"production\" ]; then pnpm migrate:production; fi"
+}
